@@ -37,10 +37,12 @@ class SearchTest extends TestCase
         $response->assertSuccessful();
         $response->assertExactJson([
             [
+                'id' => 1,
                 'lang' => 'javascript',
                 'method' => 'indexOf'
             ],
             [
+                'id' => 2,
                 'lang' => 'javascript',
                 'method' => 'findIndex'
             ]

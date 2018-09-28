@@ -9,8 +9,10 @@ class ComparisonSearchController extends Controller
 {
     public function index()
     {
-        return Comparison::where('method', 'like', request('q') . '%')->first()
-            ->matches()
-            ->get(['lang', 'method']);
+        $parent = Comparison::where('method', 'like', request('q') . '%')->first();
+
+        return $parent ?
+            $parent->matches()->get(['matches.id', 'lang', 'method']) :
+            [];
     }
 }
