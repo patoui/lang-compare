@@ -4,7 +4,8 @@
             <div class="row">
                 <div class="col">
                     <h1 class="text-center">Lang Compare</h1>
-                    <p class="font-italic text-center">Look up a method from one language and see the equivalent in another!</p>
+                    <p class="font-italic text-center m-0">Look up a method from one language and see the equivalent in another!</p>
+                    <p class="font-italic text-center"><small>(currently only has array methods)</small></p>
                     <div>
                         <div class="form-group">
                             <label for="lang">Language</label>
