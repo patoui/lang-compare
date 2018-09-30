@@ -14,121 +14,126 @@ class ComparisonSeeder extends Seeder
     {
         $comparisons = [
             // PHP
-            ['lang' => 'php', 'method' => 'array_change_key_case'],
-            ['lang' => 'php', 'method' => 'array_chunk'],
-            ['lang' => 'php', 'method' => 'array_column'],
-            ['lang' => 'php', 'method' => 'array_combine'],
-            ['lang' => 'php', 'method' => 'array_count_values'],
-            ['lang' => 'php', 'method' => 'array_diff_assoc'],
-            ['lang' => 'php', 'method' => 'array_diff_key'],
-            ['lang' => 'php', 'method' => 'array_diff_uassoc'],
-            ['lang' => 'php', 'method' => 'array_diff_ukey'],
-            ['lang' => 'php', 'method' => 'array_diff'],
-            ['lang' => 'php', 'method' => 'array_fill_keys'],
-            ['lang' => 'php', 'method' => 'array_fill'],
-            ['lang' => 'php', 'method' => 'array_filter'],
-            ['lang' => 'php', 'method' => 'array_flip'],
-            ['lang' => 'php', 'method' => 'array_intersect_assoc'],
-            ['lang' => 'php', 'method' => 'array_intersect_key'],
-            ['lang' => 'php', 'method' => 'array_intersect_uassoc'],
-            ['lang' => 'php', 'method' => 'array_intersect_ukey'],
-            ['lang' => 'php', 'method' => 'array_intersect'],
-            ['lang' => 'php', 'method' => 'array_key_exists'],
-            ['lang' => 'php', 'method' => 'array_key_first'],
-            ['lang' => 'php', 'method' => 'array_key_last'],
-            ['lang' => 'php', 'method' => 'array_keys'],
-            ['lang' => 'php', 'method' => 'array_map'],
-            ['lang' => 'php', 'method' => 'array_merge_recursive'],
-            ['lang' => 'php', 'method' => 'array_merge'],
-            ['lang' => 'php', 'method' => 'array_multisort'],
-            ['lang' => 'php', 'method' => 'array_pad'],
-            ['lang' => 'php', 'method' => 'array_pop'],
-            ['lang' => 'php', 'method' => 'array_product'],
-            ['lang' => 'php', 'method' => 'array_push'],
-            ['lang' => 'php', 'method' => 'array_rand'],
-            ['lang' => 'php', 'method' => 'array_reduce'],
-            ['lang' => 'php', 'method' => 'array_replace_recursive'],
-            ['lang' => 'php', 'method' => 'array_replace'],
-            ['lang' => 'php', 'method' => 'array_reverse'],
-            ['lang' => 'php', 'method' => 'array_search'],
-            ['lang' => 'php', 'method' => 'array_shift'],
-            ['lang' => 'php', 'method' => 'array_slice'],
-            ['lang' => 'php', 'method' => 'array_splice'],
-            ['lang' => 'php', 'method' => 'array_sum'],
-            ['lang' => 'php', 'method' => 'array_udiff_assoc'],
-            ['lang' => 'php', 'method' => 'array_udiff_uassoc'],
-            ['lang' => 'php', 'method' => 'array_udiff'],
-            ['lang' => 'php', 'method' => 'array_uintersect_assoc'],
-            ['lang' => 'php', 'method' => 'array_uintersect_uassoc'],
-            ['lang' => 'php', 'method' => 'array_uintersect'],
-            ['lang' => 'php', 'method' => 'array_unique'],
-            ['lang' => 'php', 'method' => 'array_unshift'],
-            ['lang' => 'php', 'method' => 'array_values'],
-            ['lang' => 'php', 'method' => 'array_walk_recursive'],
-            ['lang' => 'php', 'method' => 'array_walk'],
-            ['lang' => 'php', 'method' => 'array'],
-            ['lang' => 'php', 'method' => 'arsort'],
-            ['lang' => 'php', 'method' => 'asort'],
-            ['lang' => 'php', 'method' => 'compact'],
-            ['lang' => 'php', 'method' => 'count'],
-            ['lang' => 'php', 'method' => 'current'],
-            ['lang' => 'php', 'method' => 'each'],
-            ['lang' => 'php', 'method' => 'end'],
-            ['lang' => 'php', 'method' => 'extract'],
-            ['lang' => 'php', 'method' => 'in_array'],
-            ['lang' => 'php', 'method' => 'key_exists'],
-            ['lang' => 'php', 'method' => 'key'],
-            ['lang' => 'php', 'method' => 'krsort'],
-            ['lang' => 'php', 'method' => 'ksort'],
-            ['lang' => 'php', 'method' => 'list'],
-            ['lang' => 'php', 'method' => 'natcasesort'],
-            ['lang' => 'php', 'method' => 'natsort'],
-            ['lang' => 'php', 'method' => 'next'],
-            ['lang' => 'php', 'method' => 'pos'],
-            ['lang' => 'php', 'method' => 'prev'],
-            ['lang' => 'php', 'method' => 'range'],
-            ['lang' => 'php', 'method' => 'reset'],
-            ['lang' => 'php', 'method' => 'rsort'],
-            ['lang' => 'php', 'method' => 'shuffle'],
-            ['lang' => 'php', 'method' => 'sizeof'],
-            ['lang' => 'php', 'method' => 'sort'],
-            ['lang' => 'php', 'method' => 'uasort'],
-            ['lang' => 'php', 'method' => 'uksort'],
-            ['lang' => 'php', 'method' => 'usort'],
+            ['lang' => 'php', 'method' => 'array_change_key_case', 'url' => 'http://php.net/manual/en/function.array-change-key-case.php'],
+            ['lang' => 'php', 'method' => 'array_chunk', 'url' => 'http://php.net/manual/en/function.array-chunk.php'],
+            ['lang' => 'php', 'method' => 'array_column', 'url' => 'http://php.net/manual/en/function.array-column.php'],
+            ['lang' => 'php', 'method' => 'array_combine', 'url' => 'http://php.net/manual/en/function.array-combine.php'],
+            ['lang' => 'php', 'method' => 'array_count_values', 'url' => 'http://php.net/manual/en/function.array-count-values.php'],
+            ['lang' => 'php', 'method' => 'array_diff_assoc', 'url' => 'http://php.net/manual/en/function.array-diff-assoc.php'],
+            ['lang' => 'php', 'method' => 'array_diff_key', 'url' => 'http://php.net/manual/en/function.array-diff-key.php'],
+            ['lang' => 'php', 'method' => 'array_diff_uassoc', 'url' => 'http://php.net/manual/en/function.array-diff-uassoc.php'],
+            ['lang' => 'php', 'method' => 'array_diff_ukey', 'url' => 'http://php.net/manual/en/function.array-diff-ukey.php'],
+            ['lang' => 'php', 'method' => 'array_diff', 'url' => 'http://php.net/manual/en/function.array-diff.php'],
+            ['lang' => 'php', 'method' => 'array_fill_keys', 'url' => 'http://php.net/manual/en/function.array-fill-keys.php'],
+            ['lang' => 'php', 'method' => 'array_fill', 'url' => 'http://php.net/manual/en/function.array-fill.php'],
+            ['lang' => 'php', 'method' => 'array_filter', 'url' => 'http://php.net/manual/en/function.array-filter.php'],
+            ['lang' => 'php', 'method' => 'array_flip', 'url' => 'http://php.net/manual/en/function.array-flip.php'],
+            ['lang' => 'php', 'method' => 'array_intersect_assoc', 'url' => 'http://php.net/manual/en/function.array-intersect-assoc.php'],
+            ['lang' => 'php', 'method' => 'array_intersect_key', 'url' => 'http://php.net/manual/en/function.array-intersect-key.php'],
+            ['lang' => 'php', 'method' => 'array_intersect_uassoc', 'url' => 'http://php.net/manual/en/function.array-intersect-uassoc.php'],
+            ['lang' => 'php', 'method' => 'array_intersect_ukey', 'url' => 'http://php.net/manual/en/function.array-intersect-ukey.php'],
+            ['lang' => 'php', 'method' => 'array_intersect', 'url' => 'http://php.net/manual/en/function.array-intersect.php'],
+            ['lang' => 'php', 'method' => 'array_key_exists', 'url' => 'http://php.net/manual/en/function.array-key-exists.php'],
+            ['lang' => 'php', 'method' => 'array_key_first', 'url' => 'http://php.net/manual/en/function.array-key-first.php'],
+            ['lang' => 'php', 'method' => 'array_key_last', 'url' => 'http://php.net/manual/en/function.array-key-last.php'],
+            ['lang' => 'php', 'method' => 'array_keys', 'url' => 'http://php.net/manual/en/function.array-keys.php'],
+            ['lang' => 'php', 'method' => 'array_map', 'url' => 'http://php.net/manual/en/function.array-map.php'],
+            ['lang' => 'php', 'method' => 'array_merge_recursive', 'url' => 'http://php.net/manual/en/function.array-merge-recursive.php'],
+            ['lang' => 'php', 'method' => 'array_merge', 'url' => 'http://php.net/manual/en/function.array-merge.php'],
+            ['lang' => 'php', 'method' => 'array_multisort', 'url' => 'http://php.net/manual/en/function.array-multisort.php'],
+            ['lang' => 'php', 'method' => 'array_pad', 'url' => 'http://php.net/manual/en/function.array-pad.php'],
+            ['lang' => 'php', 'method' => 'array_pop', 'url' => 'http://php.net/manual/en/function.array-pop.php'],
+            ['lang' => 'php', 'method' => 'array_product', 'url' => 'http://php.net/manual/en/function.array-product.php'],
+            ['lang' => 'php', 'method' => 'array_push', 'url' => 'http://php.net/manual/en/function.array-push.php'],
+            ['lang' => 'php', 'method' => 'array_rand', 'url' => 'http://php.net/manual/en/function.array-rand.php'],
+            ['lang' => 'php', 'method' => 'array_reduce', 'url' => 'http://php.net/manual/en/function.array-reduce.php'],
+            ['lang' => 'php', 'method' => 'array_replace_recursive', 'url' => 'http://php.net/manual/en/function.array-replace-recursive.php'],
+            ['lang' => 'php', 'method' => 'array_replace', 'url' => 'http://php.net/manual/en/function.array-replace.php'],
+            ['lang' => 'php', 'method' => 'array_reverse', 'url' => 'http://php.net/manual/en/function.array-reverse.php'],
+            ['lang' => 'php', 'method' => 'array_search', 'url' => 'http://php.net/manual/en/function.array-search.php'],
+            ['lang' => 'php', 'method' => 'array_shift', 'url' => 'http://php.net/manual/en/function.array-shift.php'],
+            ['lang' => 'php', 'method' => 'array_slice', 'url' => 'http://php.net/manual/en/function.array-slice.php'],
+            ['lang' => 'php', 'method' => 'array_splice', 'url' => 'http://php.net/manual/en/function.array-splice.php'],
+            ['lang' => 'php', 'method' => 'array_sum', 'url' => 'http://php.net/manual/en/function.array-sum.php'],
+            ['lang' => 'php', 'method' => 'array_udiff_assoc', 'url' => 'http://php.net/manual/en/function.array-sum.php'],
+            ['lang' => 'php', 'method' => 'array_udiff_uassoc', 'url' => 'http://php.net/manual/en/function.array-udiff-uassoc.php'],
+            ['lang' => 'php', 'method' => 'array_udiff', 'url' => 'http://php.net/manual/en/function.array-udiff.php'],
+            ['lang' => 'php', 'method' => 'array_uintersect_assoc', 'url' => 'http://php.net/manual/en/function.array-uintersect-assoc.php'],
+            ['lang' => 'php', 'method' => 'array_uintersect_uassoc', 'url' => 'http://php.net/manual/en/function.array-uintersect-uassoc.php'],
+            ['lang' => 'php', 'method' => 'array_uintersect', 'url' => 'http://php.net/manual/en/function.array-uintersect.php'],
+            ['lang' => 'php', 'method' => 'array_unique', 'url' => 'http://php.net/manual/en/function.array-unique.php'],
+            ['lang' => 'php', 'method' => 'array_unshift', 'url' => 'http://php.net/manual/en/function.array-unshift.php'],
+            ['lang' => 'php', 'method' => 'array_values', 'url' => 'http://php.net/manual/en/function.array-values.php'],
+            ['lang' => 'php', 'method' => 'array_walk_recursive', 'url' => 'http://php.net/manual/en/function.array-walk-recursive.php'],
+            ['lang' => 'php', 'method' => 'array_walk', 'url' => 'http://php.net/manual/en/function.array-walk.php'],
+            ['lang' => 'php', 'method' => 'array', 'url' => 'http://php.net/manual/en/function.array.php'],
+            ['lang' => 'php', 'method' => 'arsort', 'url' => 'http://php.net/manual/en/function.arsort.php'],
+            ['lang' => 'php', 'method' => 'asort', 'url' => 'http://php.net/manual/en/function.asort.php'],
+            ['lang' => 'php', 'method' => 'compact', 'url' => 'http://php.net/manual/en/function.compact.php'],
+            ['lang' => 'php', 'method' => 'count', 'url' => 'http://php.net/manual/en/function.count.php'],
+            ['lang' => 'php', 'method' => 'current', 'url' => 'http://php.net/manual/en/function.current.php'],
+            ['lang' => 'php', 'method' => 'each', 'url' => 'http://php.net/manual/en/function.each.php'],
+            ['lang' => 'php', 'method' => 'end', 'url' => 'http://php.net/manual/en/function.end.php'],
+            ['lang' => 'php', 'method' => 'extract', 'url' => 'http://php.net/manual/en/function.extract.php'],
+            ['lang' => 'php', 'method' => 'in_array', 'url' => 'http://php.net/manual/en/function.in-array.php'],
+            ['lang' => 'php', 'method' => 'key_exists', 'url' => 'http://php.net/manual/en/function.key-exists.php'],
+            ['lang' => 'php', 'method' => 'key', 'url' => 'http://php.net/manual/en/function.key.php'],
+            ['lang' => 'php', 'method' => 'krsort', 'url' => 'http://php.net/manual/en/function.krsort.php'],
+            ['lang' => 'php', 'method' => 'ksort', 'url' => 'http://php.net/manual/en/function.ksort.php'],
+            ['lang' => 'php', 'method' => 'list', 'url' => 'http://php.net/manual/en/function.list.php'],
+            ['lang' => 'php', 'method' => 'natcasesort', 'url' => 'http://php.net/manual/en/function.natcasesort.php'],
+            ['lang' => 'php', 'method' => 'natsort', 'url' => 'http://php.net/manual/en/function.natsort.php'],
+            ['lang' => 'php', 'method' => 'next', 'url' => 'http://php.net/manual/en/function.next.php'],
+            ['lang' => 'php', 'method' => 'pos', 'url' => 'http://php.net/manual/en/function.pos.php'],
+            ['lang' => 'php', 'method' => 'prev', 'url' => 'http://php.net/manual/en/function.prev.php'],
+            ['lang' => 'php', 'method' => 'range', 'url' => 'http://php.net/manual/en/function.range.php'],
+            ['lang' => 'php', 'method' => 'reset', 'url' => 'http://php.net/manual/en/function.reset.php'],
+            ['lang' => 'php', 'method' => 'rsort', 'url' => 'http://php.net/manual/en/function.rsort.php'],
+            ['lang' => 'php', 'method' => 'shuffle', 'url' => 'http://php.net/manual/en/function.shuffle.php'],
+            ['lang' => 'php', 'method' => 'sizeof', 'url' => 'http://php.net/manual/en/function.sizeof.php'],
+            ['lang' => 'php', 'method' => 'sort', 'url' => 'http://php.net/manual/en/function.sort.php'],
+            ['lang' => 'php', 'method' => 'uasort', 'url' => 'http://php.net/manual/en/function.uasort.php'],
+            ['lang' => 'php', 'method' => 'uksort', 'url' => 'http://php.net/manual/en/function.uksort.php'],
+            ['lang' => 'php', 'method' => 'usort', 'url' => 'http://php.net/manual/en/function.usort.php'],
+            ['lang' => 'php', 'method' => 'is_array', 'url' => 'http://php.net/manual/en/function.is-array.php'],
+            ['lang' => 'php', 'method' => 'implode', 'url' => 'http://php.net/manual/en/function.implode.php'],
             // JAVASCRIPT
-            ['lang' => 'javascript', 'method' => 'from'],
-            ['lang' => 'javascript', 'method' => 'isArray'],
-            ['lang' => 'javascript', 'method' => 'of'],
-            ['lang' => 'javascript', 'method' => 'concat'],
-            ['lang' => 'javascript', 'method' => 'copyWithin'],
-            ['lang' => 'javascript', 'method' => 'entries'],
-            ['lang' => 'javascript', 'method' => 'every'],
-            ['lang' => 'javascript', 'method' => 'fill'],
-            ['lang' => 'javascript', 'method' => 'filter'],
-            ['lang' => 'javascript', 'method' => 'find'],
-            ['lang' => 'javascript', 'method' => 'findIndex'],
-            ['lang' => 'javascript', 'method' => 'forEach'],
-            ['lang' => 'javascript', 'method' => 'includes'],
-            ['lang' => 'javascript', 'method' => 'indexOf'],
-            ['lang' => 'javascript', 'method' => 'join'],
-            ['lang' => 'javascript', 'method' => 'keys'],
-            ['lang' => 'javascript', 'method' => 'lastIndexOf'],
-            ['lang' => 'javascript', 'method' => 'map'],
-            ['lang' => 'javascript', 'method' => 'pop'],
-            ['lang' => 'javascript', 'method' => 'push'],
-            ['lang' => 'javascript', 'method' => 'reduce'],
-            ['lang' => 'javascript', 'method' => 'reduceRight'],
-            ['lang' => 'javascript', 'method' => 'reverse'],
-            ['lang' => 'javascript', 'method' => 'shift'],
-            ['lang' => 'javascript', 'method' => 'slice'],
-            ['lang' => 'javascript', 'method' => 'some'],
-            ['lang' => 'javascript', 'method' => 'sort'],
-            ['lang' => 'javascript', 'method' => 'splice'],
-            ['lang' => 'javascript', 'method' => 'toLocaleString'],
-            ['lang' => 'javascript', 'method' => 'toSource'],
-            ['lang' => 'javascript', 'method' => 'toString'],
-            ['lang' => 'javascript', 'method' => 'unshift'],
-            ['lang' => 'javascript', 'method' => 'values'],
+            ['lang' => 'javascript', 'method' => 'length', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length'],
+            ['lang' => 'javascript', 'method' => 'from', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from'],
+            ['lang' => 'javascript', 'method' => 'isArray', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray'],
+            ['lang' => 'javascript', 'method' => 'of', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of'],
+            ['lang' => 'javascript', 'method' => 'concat', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat'],
+            ['lang' => 'javascript', 'method' => 'copyWithin', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin'],
+            ['lang' => 'javascript', 'method' => 'entries', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries'],
+            ['lang' => 'javascript', 'method' => 'every', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every'],
+            ['lang' => 'javascript', 'method' => 'fill', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill'],
+            ['lang' => 'javascript', 'method' => 'filter', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter'],
+            ['lang' => 'javascript', 'method' => 'find', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find'],
+            ['lang' => 'javascript', 'method' => 'findIndex', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex'],
+            ['lang' => 'javascript', 'method' => 'flat', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat'],
+            ['lang' => 'javascript', 'method' => 'flatMap', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap'],
+            ['lang' => 'javascript', 'method' => 'forEach', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach'],
+            ['lang' => 'javascript', 'method' => 'includes', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes'],
+            ['lang' => 'javascript', 'method' => 'indexOf', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf'],
+            ['lang' => 'javascript', 'method' => 'join', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join'],
+            ['lang' => 'javascript', 'method' => 'keys', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys'],
+            ['lang' => 'javascript', 'method' => 'lastIndexOf', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf'],
+            ['lang' => 'javascript', 'method' => 'map', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map'],
+            ['lang' => 'javascript', 'method' => 'pop', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop'],
+            ['lang' => 'javascript', 'method' => 'push', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push'],
+            ['lang' => 'javascript', 'method' => 'reduce', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce'],
+            ['lang' => 'javascript', 'method' => 'reduceRight', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight'],
+            ['lang' => 'javascript', 'method' => 'reverse', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse'],
+            ['lang' => 'javascript', 'method' => 'shift', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift'],
+            ['lang' => 'javascript', 'method' => 'slice', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice'],
+            ['lang' => 'javascript', 'method' => 'some', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some'],
+            ['lang' => 'javascript', 'method' => 'sort', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort'],
+            ['lang' => 'javascript', 'method' => 'splice', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice'],
+            ['lang' => 'javascript', 'method' => 'toLocaleString', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toLocaleString'],
+            ['lang' => 'javascript', 'method' => 'toSource', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSource'],
+            ['lang' => 'javascript', 'method' => 'toString', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString'],
+            ['lang' => 'javascript', 'method' => 'unshift', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift'],
+            ['lang' => 'javascript', 'method' => 'values', 'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values'],
         ];
 
         foreach ($comparisons as $key => $comparison) {
@@ -144,14 +149,272 @@ class ComparisonSeeder extends Seeder
 
     public function seedPHPMatches()
     {
-        $phpArraySearch = Comparison::where([
+        // array_search
+        // indexOf
+        $php = Comparison::where([
             'lang' => 'php',
             'method' => 'array_search',
         ])->first();
         $javascriptIds = DB::table('comparisons')
             ->where('lang', 'javascript')
-            ->whereIn('method', ['indexOf'])
+            ->whereIn('method', ['indexOf', 'findIndex', 'includes'])
             ->pluck('id');
-        $phpArraySearch->matches()->sync($javascriptIds, false);
+        $php->matches()->sync($javascriptIds, false);
+
+        // array_push
+        // push
+        $php = Comparison::where([
+            'lang' => 'php',
+            'method' => 'array_push',
+        ])->first();
+        $javascriptIds = DB::table('comparisons')
+            ->where('lang', 'javascript')
+            ->whereIn('method', ['push'])
+            ->pluck('id');
+        $php->matches()->sync($javascriptIds, false);
+
+        // array_map
+        // map
+        $php = Comparison::where([
+            'lang' => 'php',
+            'method' => 'array_map',
+        ])->first();
+        $javascriptIds = DB::table('comparisons')
+            ->where('lang', 'javascript')
+            ->whereIn('method', ['map'])
+            ->pluck('id');
+        $php->matches()->sync($javascriptIds, false);
+
+        // array_reduce
+        // reduce
+        $php = Comparison::where([
+            'lang' => 'php',
+            'method' => 'array_reduce',
+        ])->first();
+        $javascriptIds = DB::table('comparisons')
+            ->where('lang', 'javascript')
+            ->whereIn('method', ['reduce'])
+            ->pluck('id');
+        $php->matches()->sync($javascriptIds, false);
+
+        // is_array
+        // isArray
+        $php = Comparison::where([
+            'lang' => 'php',
+            'method' => 'is_array',
+        ])->first();
+        $javascriptIds = DB::table('comparisons')
+            ->where('lang', 'javascript')
+            ->whereIn('method', ['isArray'])
+            ->pluck('id');
+        $php->matches()->sync($javascriptIds, false);
+
+        // count
+        // length
+        $php = Comparison::where([
+            'lang' => 'php',
+            'method' => 'count',
+        ])->first();
+        $javascriptIds = DB::table('comparisons')
+            ->where('lang', 'javascript')
+            ->whereIn('method', ['length'])
+            ->pluck('id');
+        $php->matches()->sync($javascriptIds, false);
+
+        // sort
+        // sort
+        // PHP sort is lowest to highest
+        // JavaScript sort is according to string Unicode code points.
+        $php = Comparison::where([
+            'lang' => 'php',
+            'method' => 'sort',
+        ])->first();
+        $javascriptIds = DB::table('comparisons')
+            ->where('lang', 'javascript')
+            ->whereIn('method', ['sort'])
+            ->pluck('id');
+        $php->matches()->sync($javascriptIds, false);
+
+        // array_slice
+        // slice
+        // PHP: second param offset
+        // JavaScript: second param end
+        $php = Comparison::where([
+            'lang' => 'php',
+            'method' => 'array_slice',
+        ])->first();
+        $javascriptIds = DB::table('comparisons')
+            ->where('lang', 'javascript')
+            ->whereIn('method', ['slice'])
+            ->pluck('id');
+        $php->matches()->sync($javascriptIds, false);
+
+        // array_reverse
+        // reverse
+        $php = Comparison::where([
+            'lang' => 'php',
+            'method' => 'array_reverse',
+        ])->first();
+        $javascriptIds = DB::table('comparisons')
+            ->where('lang', 'javascript')
+            ->whereIn('method', ['reverse'])
+            ->pluck('id');
+        $php->matches()->sync($javascriptIds, false);
+
+        // implode
+        // join
+        $php = Comparison::where([
+            'lang' => 'php',
+            'method' => 'implode',
+        ])->first();
+        $javascriptIds = DB::table('comparisons')
+            ->where('lang', 'javascript')
+            ->whereIn('method', ['join'])
+            ->pluck('id');
+        $php->matches()->sync($javascriptIds, false);
+
+        // implode
+        // join
+        $php = Comparison::where([
+            'lang' => 'php',
+            'method' => 'array_filter',
+        ])->first();
+        $javascriptIds = DB::table('comparisons')
+            ->where('lang', 'javascript')
+            ->whereIn('method', ['filter'])
+            ->pluck('id');
+        $php->matches()->sync($javascriptIds, false);
+
+        // array_merge
+        // concat
+        $php = Comparison::where([
+            'lang' => 'php',
+            'method' => 'array_merge',
+        ])->first();
+        $javascriptIds = DB::table('comparisons')
+            ->where('lang', 'javascript')
+            ->whereIn('method', ['concat'])
+            ->pluck('id');
+        $php->matches()->sync($javascriptIds, false);
+
+        // array_merge_recursive
+        // concat
+        $php = Comparison::where([
+            'lang' => 'php',
+            'method' => 'array_merge_recursive',
+        ])->first();
+        $javascriptIds = DB::table('comparisons')
+            ->where('lang', 'javascript')
+            ->whereIn('method', ['concat'])
+            ->pluck('id');
+        $php->matches()->sync($javascriptIds, false);
+
+        // array_walk
+        // every
+        $php = Comparison::where([
+            'lang' => 'php',
+            'method' => 'array_walk',
+        ])->first();
+        $javascriptIds = DB::table('comparisons')
+            ->where('lang', 'javascript')
+            ->whereIn('method', ['every'])
+            ->pluck('id');
+        $php->matches()->sync($javascriptIds, false);
+
+        // array_fill
+        // fill
+        $php = Comparison::where([
+            'lang' => 'php',
+            'method' => 'array_fill',
+        ])->first();
+        $javascriptIds = DB::table('comparisons')
+            ->where('lang', 'javascript')
+            ->whereIn('method', ['fill'])
+            ->pluck('id');
+        $php->matches()->sync($javascriptIds, false);
+
+        // array_filter
+        // filter
+        $php = Comparison::where([
+            'lang' => 'php',
+            'method' => 'array_filter',
+        ])->first();
+        $javascriptIds = DB::table('comparisons')
+            ->where('lang', 'javascript')
+            ->whereIn('method', ['filter'])
+            ->pluck('id');
+        $php->matches()->sync($javascriptIds, false);
+
+        // array_walk
+        // forEach
+        $php = Comparison::where([
+            'lang' => 'php',
+            'method' => 'array_walk',
+        ])->first();
+        $javascriptIds = DB::table('comparisons')
+            ->where('lang', 'javascript')
+            ->whereIn('method', ['forEach'])
+            ->pluck('id');
+        $php->matches()->sync($javascriptIds, false);
+
+        // array_keys
+        // keys
+        $php = Comparison::where([
+            'lang' => 'php',
+            'method' => 'array_keys',
+        ])->first();
+        $javascriptIds = DB::table('comparisons')
+            ->where('lang', 'javascript')
+            ->whereIn('method', ['keys'])
+            ->pluck('id');
+        $php->matches()->sync($javascriptIds, false);
+
+        // array_pop
+        // pop
+        $php = Comparison::where([
+            'lang' => 'php',
+            'method' => 'array_pop',
+        ])->first();
+        $javascriptIds = DB::table('comparisons')
+            ->where('lang', 'javascript')
+            ->whereIn('method', ['pop'])
+            ->pluck('id');
+        $php->matches()->sync($javascriptIds, false);
+
+        // array_shift
+        // shift
+        $php = Comparison::where([
+            'lang' => 'php',
+            'method' => 'array_shift',
+        ])->first();
+        $javascriptIds = DB::table('comparisons')
+            ->where('lang', 'javascript')
+            ->whereIn('method', ['shift'])
+            ->pluck('id');
+        $php->matches()->sync($javascriptIds, false);
+
+        // array_unshift
+        // unshift
+        $php = Comparison::where([
+            'lang' => 'php',
+            'method' => 'array_unshift',
+        ])->first();
+        $javascriptIds = DB::table('comparisons')
+            ->where('lang', 'javascript')
+            ->whereIn('method', ['unshift'])
+            ->pluck('id');
+        $php->matches()->sync($javascriptIds, false);
+
+        // array_values
+        // values
+        $php = Comparison::where([
+            'lang' => 'php',
+            'method' => 'array_values',
+        ])->first();
+        $javascriptIds = DB::table('comparisons')
+            ->where('lang', 'javascript')
+            ->whereIn('method', ['values'])
+            ->pluck('id');
+        $php->matches()->sync($javascriptIds, false);
     }
 }
