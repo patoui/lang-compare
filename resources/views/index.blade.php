@@ -8,7 +8,7 @@
     <title>Lang Compare</title>
 
     <!-- Styles -->
-    <link href="{{ asset('/css/app.css') }}" rel="stylesheet" />
+    <link href="{{ mix('/css/app.css') }}" rel="stylesheet" />
 </head>
 <body>
     <div id="app" class="container">
@@ -20,6 +20,6 @@
         <p class="text-muted text-center">&copy; {{ \Carbon\Carbon::now()->format('Y') }} Patrique Ouimet</p>
       </div>
     </footer>
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
