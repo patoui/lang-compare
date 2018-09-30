@@ -20,10 +20,12 @@ class BelongsToManyComparisonTest extends TestCase
         $php = factory(Comparison::class)->create([
             'lang' => 'php',
             'method' => 'array_search',
+            'url' => 'http://php.net/manual/en/function.array-search.php',
         ]);
         $javascript = factory(Comparison::class)->create([
             'lang' => 'javascript',
             'method' => 'indexOf',
+            'url' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf',
         ]);
 
         // Pre-assert

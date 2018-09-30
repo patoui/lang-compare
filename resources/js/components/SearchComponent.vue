@@ -3,7 +3,8 @@
         <div class="col">
             <div class="row">
                 <div class="col">
-                    <h1 class="text-center">Search</h1>
+                    <h1 class="text-center">Lang Compare</h1>
+                    <p class="font-italic text-center">Look up a method from one language and see the equivalent in another!</p>
                     <div>
                         <div class="form-group">
                             <label for="lang">Language</label>
@@ -27,7 +28,7 @@
                 <div class="col">
                     <div class="row">
                         <div class="col">
-                            <h2>Matches for: {{ query }}</h2>
+                            <h2>Matches for: <a v-bind:href="comparison.url" target="_blank">{{ comparison.method }}</a></h2>
                         </div>
                     </div>
                     <div class="row">
@@ -42,7 +43,7 @@
                                 <tbody>
                                     <tr v-for="match in matches" v-bind:key="match.id">
                                         <td>{{ match.lang }}</td>
-                                        <td>{{ match.method }}</td>
+                                        <td><a v-bind:href="match.url" target="_blank">{{ match.method }}</a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -60,6 +61,7 @@
             return {
                 lang: 'php',
                 query: '',
+                comparison: {},
                 matches: []
             };
         },
@@ -80,7 +82,8 @@
                     });
             },
             refresh({data}) {
-                this.matches = data;
+                this.comparison = data.comparison;
+                this.matches = data.matches;
             }
         }
     }

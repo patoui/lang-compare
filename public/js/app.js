@@ -47398,12 +47398,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
             lang: 'php',
             query: '',
+            comparison: {},
             matches: []
         };
     },
@@ -47422,7 +47424,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         refresh: function refresh(_ref) {
             var data = _ref.data;
 
-            this.matches = data;
+            this.comparison = data.comparison;
+            this.matches = data.matches;
         }
     }
 });
@@ -47439,7 +47442,13 @@ var render = function() {
     _c("div", { staticClass: "col" }, [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col" }, [
-          _c("h1", { staticClass: "text-center" }, [_vm._v("Search")]),
+          _c("h1", { staticClass: "text-center" }, [_vm._v("Lang Compare")]),
+          _vm._v(" "),
+          _c("p", { staticClass: "font-italic text-center" }, [
+            _vm._v(
+              "Look up a method from one language and see the equivalent in another!"
+            )
+          ]),
           _vm._v(" "),
           _c("div", [
             _c("div", { staticClass: "form-group" }, [
@@ -47544,7 +47553,14 @@ var render = function() {
           _c("div", { staticClass: "col" }, [
             _c("div", { staticClass: "row" }, [
               _c("div", { staticClass: "col" }, [
-                _c("h2", [_vm._v("Matches for: " + _vm._s(_vm.query))])
+                _c("h2", [
+                  _vm._v("Matches for: "),
+                  _c(
+                    "a",
+                    { attrs: { href: _vm.comparison.url, target: "_blank" } },
+                    [_vm._v(_vm._s(_vm.comparison.method))]
+                  )
+                ])
               ])
             ]),
             _vm._v(" "),
@@ -47559,7 +47575,13 @@ var render = function() {
                       return _c("tr", { key: match.id }, [
                         _c("td", [_vm._v(_vm._s(match.lang))]),
                         _vm._v(" "),
-                        _c("td", [_vm._v(_vm._s(match.method))])
+                        _c("td", [
+                          _c(
+                            "a",
+                            { attrs: { href: match.url, target: "_blank" } },
+                            [_vm._v(_vm._s(match.method))]
+                          )
+                        ])
                       ])
                     })
                   )

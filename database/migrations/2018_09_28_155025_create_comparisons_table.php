@@ -17,6 +17,7 @@ class CreateComparisonsTable extends Migration
             $table->increments('id');
             $table->string('lang');
             $table->string('method');
+            $table->text('url');
             $table->timestamps();
         });
     }
