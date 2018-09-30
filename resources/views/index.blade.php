@@ -16,6 +16,7 @@
     </div>
     <footer class="footer">
       <div class="container">
+        <p class="text-muted text-center m-0"><a href="https://github.com/patoui/lang-compare" target="_blank">Source Code</a></p>
         <p class="text-muted text-center">&copy; {{ \Carbon\Carbon::now()->format('Y') }} Patrique Ouimet</p>
       </div>
     </footer>
