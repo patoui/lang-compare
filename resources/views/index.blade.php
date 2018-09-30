@@ -14,6 +14,11 @@
     <div id="app" class="container">
         <search-component></search-component>
     </div>
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted text-center">&copy; {{ \Carbon\Carbon::now()->format('Y') }} Patrique Ouimet</p>
+      </div>
+    </footer>
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
