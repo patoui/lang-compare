@@ -145,6 +145,7 @@ class ComparisonSeeder extends Seeder
         }
 
         $this->seedPHPMatches();
+        $this->seedJavaScriptMatches();
     }
 
     public function seedPHPMatches()
@@ -416,5 +417,286 @@ class ComparisonSeeder extends Seeder
             ->whereIn('method', ['values'])
             ->pluck('id');
         $php->matches()->sync($javascriptIds, false);
+    }
+
+    public function seedJavaScriptMatches()
+    {
+        // indexOf
+        // array_search
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'indexOf',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['array_search'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
+
+        // findIndex
+        // array_search
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'findIndex',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['array_search'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
+
+        // includes
+        // array_search
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'includes',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['array_search'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
+
+        // push
+        // array_push
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'push',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['array_push'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
+
+        // map
+        // array_map
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'map',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['array_map'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
+
+        // reduce
+        // array_reduce
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'reduce',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['array_reduce'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
+
+        // isArray
+        // is_array
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'isArray',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['is_array'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
+
+        // length
+        // count
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'length',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['count'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
+
+        // sort
+        // sort
+        // JavaScript sort is according to string Unicode code points.
+        // PHP sort is lowest to highest
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'sort',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['sort'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
+
+        // slice
+        // array_slice
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'slice',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['array_slice'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
+
+        // reverse
+        // array_reverse
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'reverse',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['array_reverse'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
+
+        // join
+        // implode
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'join',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['implode'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
+
+        // concat
+        // array_merge
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'concat',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['array_merge'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
+
+        // concat
+        // array_merge_recursive
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'concat',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['array_merge_recursive'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
+
+        // every
+        // array_walk
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'every',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['array_walk'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
+
+        // fill
+        // array_fill
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'fill',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['array_fill'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
+
+        // filter
+        // array_filter
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'filter',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['array_filter'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
+
+        // forEach
+        // array_walk
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'forEach',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['array_walk'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
+
+        // keys
+        // array_keys
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'keys',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['array_keys'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
+
+        // pop
+        // array_pop
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'pop',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['array_pop'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
+
+        // shift
+        // array_shift
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'shift',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['array_shift'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
+
+        // unshift
+        // array_unshift
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'unshift',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['array_unshift'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
+
+        // values
+        // array_values
+        $javascript = Comparison::where([
+            'lang' => 'javascript',
+            'method' => 'values',
+        ])->first();
+        $phpIds = DB::table('comparisons')
+            ->where('lang', 'php')
+            ->whereIn('method', ['array_values'])
+            ->pluck('id');
+        $javascript->matches()->sync($phpIds, false);
     }
 }
