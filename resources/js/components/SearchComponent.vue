@@ -24,7 +24,7 @@
                     <h3 class="text-center">-- No results --</h3>
                 </div>
             </div>
-            <div v-show="matches.length > 0" class="row">
+            <div v-show="comparison && matches.length > 0" class="row">
                 <div class="col">
                     <div class="row">
                         <div class="col">
