@@ -15,3 +15,6 @@ use Illuminate\Http\Request;
 
 Route::get('/search', 'ComparisonSearchController@index')
     ->name('api.comparison-search.index');
+
+Route::get('/suggestion', 'ComparisonSuggestionController@index')
+    ->name('api.comparison-suggestion.index');

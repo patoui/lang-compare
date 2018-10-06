@@ -15,7 +15,10 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" aria-describedby="search" placeholder="Search" v-on:input="debounceQuery" v-on:keydown.enter.prevent="debounceQuery">
+                            <input type="text" class="form-control" aria-describedby="search" placeholder="Search" v-model="query" v-on:input="debounceQuery" v-on:keydown.enter.prevent="debounceQuery">
+                            <ul v-show="suggestions" class="list-group suggestions">
+                                <li v-for="suggestion in suggestions" :key="suggestion" @click="search(suggestion)" class="list-group-item text-muted">{{ suggestion }}</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -42,9 +45,9 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr v-for="match in matches" v-bind:key="match.id">
+                                    <tr v-for="match in matches" :key="match.id">
                                         <td>{{ match.lang }}</td>
-                                        <td><a v-bind:href="match.url" target="_blank">{{ match.method }}</a></td>
+                                        <td><a :href="match.url" target="_blank">{{ match.method }}</a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -63,7 +66,8 @@
                 lang: 'php',
                 query: '',
                 comparison: {},
-                matches: []
+                matches: [],
+                suggestions: []
             };
         },
 
@@ -71,20 +75,32 @@
             debounceQuery: _.debounce(
                 function (e) {
                     this.query = e.target.value;
-                    this.search();
+                    this.fetchSuggestions();
                 },
                 500
             ),
-            search() {
-                axios.get('/api/search', { params: { q: this.query, lang: this.lang }})
-                    .then(this.refresh)
+            search(method) {
+                this.suggestions = [];
+                this.query = method;
+                axios.get('/api/search', { params: { q: method, lang: this.lang }})
+                    .then(this.refreshResults)
                     .catch(function (error) {
                         // TBD
                     });
             },
-            refresh({data}) {
+            fetchSuggestions() {
+                axios.get('/api/suggestion', { params: { q: this.query, lang: this.lang }})
+                    .then(this.refreshSuggestions)
+                    .catch(function (error) {
+                        // TBD
+                    });
+            },
+            refreshResults({data}) {
                 this.comparison = data.comparison;
                 this.matches = data.matches;
+            },
+            refreshSuggestions({data}) {
+                this.suggestions = data;
             }
         }
     }

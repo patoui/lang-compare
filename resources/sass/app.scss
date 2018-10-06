@@ -11,3 +11,12 @@
 .container {
     margin-top: 25px;
 }
+
+ul.suggestions li {
+    cursor: pointer;
+}
+
+ul.suggestions li:hover,
+ul.suggestions li:focus {
+    background-color: rgba(0,0,0,0.075);
+}
